@@ -52,12 +52,11 @@ h2 {
     background-size: cover;
     color: #fff;
     text-align: center;
-    line-height: 400px;
-    font-size: 1.5em;
     display: flex;
-    align-items: center;
+    align-items:end;
     justify-content: center;
     position: relative;
+    overflow: hidden; /* Ensures the "Click here" text stays within the card */
 }
 .card .front::before {
     content: "";
@@ -122,3 +121,49 @@ footer {
 .contact-info a:hover {
     text-decoration: underline;
 }
+
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.btn.github {
+    background-color: #333;
+}
+.btn.github:hover {
+    background-color: #555;
+}
+.btn.twitter {
+    background-color: #1DA1F2;
+}
+.btn.twitter:hover {
+    background-color: #0d8bec;
+}
+.btn.instagram {
+    background-color: #E1306C;
+}
+.btn.instagram:hover {
+    background-color: #c7245e;
+}
+.click-here {
+    position: relative;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    font-weight: bold;
+    z-index: 10; /* Ensure it is on top of other content */
+}
+
