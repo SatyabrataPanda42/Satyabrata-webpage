@@ -48,7 +48,7 @@ h2 {
     backface-visibility: hidden;
 }
 .card .front {
-    background: url("satya.jpg") no-repeat center center;
+    background: url('satya.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
     text-align: center;
